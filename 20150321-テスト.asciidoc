@@ -1,0 +1,46 @@
+= はじめてのasciidoc
+
+== はじめに
+オンラインで文章を書くときにasciidocよさそうってなったのと、githubでのプレビューに対応しているみたいなので、ためしてみたいなとおもって書いてみました。
+
+NOTE: 普段の日記はevernote + postach.ioで十分なんですけど、コードを書きたいなってなったとき、evernoteだと不便だったんです。
+
+たとえば、ソースコードはこんな感じで出るみたいです。
+
+[source, csharp]
+----
+public class Test
+{
+    public void DoTest()
+    {
+      var chiepomme = new Chiepomme(35);
+      chiepomme.Sings();
+    }
+}
+----
+わかりやすくてよいなー
+
+== Windowsでのエディタ
+atomとbracket用のプラグインがあるみたいです。これはlink:https://atom.io/packages/asciidoc-preview[asciidoc-preview]を使って書いています。プレビューにあたってasciidoc自体のインストールも必要なかったので楽でよいです！
+image:20150321-screen.png[icon]
+仕様とかもうこれでいいんじゃないかって気がしてくるね！
+ファイル出力周りはpythonが必要だったりですこしめんどくさいけど、githubのフックとかつかって自動でビルドしてあげるとかしてあげれば十分便利な気がする。
+
+== テーブルとか
+テーブル周りもなかなかおもしろくてcsvそのまま書けるみたい
+
+.CSV の表だよ
+[format="csv"]
+[frame="topbot", grid="none"]
+|======
+1,2,3,4
+a,b,c,d
+A,B,C,D
+|======
+
+== ソース
+link:20150321-ソース.asciidoc[このソースファイル]
+
+== リソース
+* link:http://www.methods.co.nz/asciidoc[] 公式
+* link:http://powerman.name/doc/asciidoc[] 公式チートシート
