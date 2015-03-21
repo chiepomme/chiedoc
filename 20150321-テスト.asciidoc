@@ -1,4 +1,8 @@
 = はじめてのasciidoc
+:author: chiepomme
+:web: http://chiepom.me/
+:date: 20150321
+:toc:
 
 == はじめに
 オンラインで文章を書くときにasciidocよさそうってなったのと、githubでのプレビューに対応しているみたいなので、ためしてみたいなとおもって書いてみました。
@@ -22,7 +26,7 @@ public class Test
 
 == Windowsでのエディタ
 atomとbracket用のプラグインがあるみたいです。これはlink:https://atom.io/packages/asciidoc-preview[asciidoc-preview]を使って書いています。プレビューにあたってasciidoc自体のインストールも必要なかったので楽でよいです！
-image:20150321-screen.png[icon]
+image:{date}/screen.png[screen]
 仕様とかもうこれでいいんじゃないかって気がしてくるね！
 ファイル出力周りはpythonが必要だったりですこしめんどくさいけど、githubのフックとかつかって自動でビルドしてあげるとかしてあげれば十分便利な気がする。
 
@@ -37,9 +41,6 @@ image:20150321-screen.png[icon]
 a,b,c,d
 A,B,C,D
 |======
-
-== ソース
-link:20150321-ソース.asciidoc[このソースファイル]
 
 == リソース
 * link:http://www.methods.co.nz/asciidoc[] 公式
